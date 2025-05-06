@@ -12,7 +12,7 @@ ws2812_T1 = 3
 ws2812_T2 = 3
 ws2812_T3 = 4
 
-@rp2.asm_pio(sideset_init=pico.PIO.OUT_HIGH, out_init=pico.PIO.OUT_HIGH, out_shiftdir=1)
+@rp2.asm_pio(sideset_init=pico.PIO.OUT_HIGH, out_init=pico.PIO.OUT_HIGH, out_shiftdir=1)
 def ws2812():
     wrap_target()
     label("0")

@@ -13,3 +13,6 @@ pico_add_extra_outputs(pio_ir_loopback)
 
 # add url via pico_set_program_url
 example_auto_set_url(pio_ir_loopback)
+
+pico_enable_stdio_usb(pio_ir_loopback 1)
+pico_enable_stdio_uart(pio_ir_loopback 0)
